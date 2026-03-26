@@ -1,0 +1,36 @@
+# creazione virtual
+virtualenv venv
+
+# Attivazione ambiente virtuale
+source venv/bin/activate
+deactivate
+
+pip freeze
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
+## virtuale env on anaconda
+conda create --name env
+
+C:\Users\Utente\anaconda3\envs\env
+
+
+conda env list
+
+conda activate env
+conda deactivate
+conda install numpy
+
+conda list
+conda list --name base
+
+conda install -n env nb_conda_kernels
+python -m ipykernel install --user --name env_kernel
+
+Installed kernelspec env_kernel in C:\Users\Utente\AppData\Roaming\jupyter\kernels\env_kernel
+
+jupyter notebook
+
+
+conda remove -n env --all
